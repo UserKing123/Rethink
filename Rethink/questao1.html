@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="questao1.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function readData()
+        {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let job = document.getElementById("job").value;
+            let mail = document.getElementById("mail").value;
+            let phone = document.getElementById("phone").value;
+            let date = document.getElementById("date").value;
+
+            alert("Pessoa cadastrada com sucesso!\n\nNome: " + name + "\nIdade: " + age + "\nProfissão: " + job + 
+                  "\nEmail: " + mail + "\nTelefone: " + phone + "\nData de Preenchimento: " + date);
+        }
+    </script>
+    <div class="field">
+        <h1 id="main">Gerenciamento de Pessoa:</h1>
+        <br>
+    </div>
+    <form>
+        <fieldset class="box">
+            <div class="field">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" autocomplete="name" minlength="3" maxlength="30" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="age">Idade</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="job">Profissão</label>
+                <input type="text" name="job" id="job" autocomplete="job" minlength="5" maxlength="30" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" autocomplete="mail" minlength="5" maxlength="40" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="phone">Telefone</label>
+                <input type="text" name="phone" id="phone" autocomplete="phone" minlength="10" maxlength="11" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="date">Data de Preenchimento</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <button type="submit" class="bCreate" onclick="readData()">Cadastrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

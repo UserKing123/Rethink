@@ -1,0 +1,11 @@
+Primeiramente, eu deveria saber quais seriam os dados que meu cliente desejaria ter no sistema. Assim, inicialmente seria feito uma
+entrevista ao cliente a fim de recolher o máximo de dados necessários. Após coleta de todos dados, deveria ser realizado a coleta de
+funcionalidades do sistema (nesse caso do contexto, seria cadastro de clientes/funcionários). Tendo todos os dados em mãos e todas
+as funcionalidades, próxima etapa seria elaborar a metodologia de programação a fim de entender como seria a melhor forma de realizar
+a criação desse sistema, isto é: Interfaces gráficas, botões, cores, etc. Deve-se ter em mente a preocupação da questão de segurança
+também, pois segurança é algo de extrema importância em uma aplicação empresarial. Após contrução do sistema, deve-se ter em mente
+a questão da probabilidade de haver erros (bugs), então após criado o sistema, deve ser feito vários testes a fim de procurar por
+erros e falhas possivelmente existentes. Após verificar um bom funcionamento do sistema, podemos checar se ele agrada nosso cliente,
+apresenteando-o para ele. Em caso positivo, projeto ficou pronto para entrega ao cliente, porém caso contrário, deve-se refazer
+o projeto a fim de manter a qualidade necessária para o cliente final, desenvolvendo-o novamente, não necessariamente do zero, mas
+reaproveitando-o e corrigindo falhas encontradas, melhorando-o consequentemente

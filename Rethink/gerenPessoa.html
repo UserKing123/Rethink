@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Solução questão 2
+        let arrName = ["Fabiana Araújo", "Gabriel Gomes", "Fernando Henrique", "Ana Luiza", 
+                       "Geralda do Nascimento", "Miguel Souza", "Antônio Miguel"];
+                       
+        let arrAge = [33, 25, 17, 2, 93, 70, 69];
+
+        //Solução questão 3
+        //let name = prompt("Informe o nome: ");
+        //alert(read(name));
+
+        //Solução questão 4
+        //alert(readName());
+
+        //Solução questao 5
+        //insertID();
+
+        //Solução questão 6
+        //getCNH();
+
+        //Solução questão 7
+        //alert(ageAverage());
+
+        function read(name)
+        {
+            for (let i = 0; i < arrName.length; i++) 
+                if (name === arrName[i])
+                    for (let j = 0; j < arrAge.length; j++)
+                        if (i === j)
+                            return "Name: " + arrName[i] + " / Age: " + arrAge[j];
+        }
+
+        function readName()
+        {
+            let text = "";
+
+            for (let i = 0; i < arrName.length; i++)
+                if (i < arrName.length)
+                    return text.concat(arrName);
+        }
+
+        function insertID()
+        {
+            let arrID = [];
+
+            for (let i = 0; i < arrName.length; i++)
+                for (let j = 0; j < arrAge.length; j++)
+                    if (i === j)
+                        alert("ID: " + arrID.push(i + 1) + " / Name: " + arrName[i] + " / Age: " + arrAge[j]);
+        }
+
+        function getCNH()
+        {
+            let arrID = [];
+
+            for (let i = 0; i < arrName.length; i++)
+                for (let j = 0; j < arrAge.length; j++)
+                    if (i === j && arrAge[j] >= 18)
+                        alert("ID: " + arrID.push(i + 1) + " / Name: " + arrName[i] + " / Age: " + arrAge[j]);
+        }
+
+        function ageAverage()
+        {
+            let sum = 0;
+
+            for (let i = 0; i < arrAge.length; i++)
+                if (i < arrAge.length)
+                    sum += arrAge[i];
+
+            return "Media de Idades: " + sum / arrAge.length;
+        }
+    </script>
+</body>
+</html>
